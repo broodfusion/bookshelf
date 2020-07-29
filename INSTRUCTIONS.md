@@ -23,12 +23,11 @@ We can drastically simplify our UI state management if we split out the server
 cache into something separate.
 
 A fantastic solution for managing the server cache on the client is
-[`react-query`](https://github.com/tannerlinsley/react-query). It is a set of
-React hooks that allow you to query, cache, and mutate data on your server in a
-way that's flexible to support many use cases and optimizations but opinionated
-enough to provide a huge amount of value. And thanks to the power of hooks, we
-can build our own hooks on top of those provided to keep our component code
-really simple.
+[`react-query`](https://react-query.tanstack.com/). It is a set of React hooks
+that allow you to query, cache, and mutate data on your server in a way that's
+flexible to support many use cases and optimizations but opinionated enough to
+provide a huge amount of value. And thanks to the power of hooks, we can build
+our own hooks on top of those provided to keep our component code really simple.
 
 Here are a few examples of how you can use react-query that are relevant for our
 exercise:
@@ -57,10 +56,16 @@ function App({tweetId}) {
 
 📜 here are the docs:
 
+<<<<<<< HEAD
+
 - `useQuery`:
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#usequery
 - `useMutation`:
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#usemutation
+  =======
+- `useQuery`: https://react-query.tanstack.com/docs/guides/queries
+- `useMutation`: https://react-query.tanstack.com/docs/guides/mutations
+  > > > > > > > upstream/exercises/06-cache-management
 
 That should be enough to get you going.
 
@@ -170,8 +175,11 @@ if the failure count is greater than 2.
 📜 Learn more about error boundaries:
 https://reactjs.org/docs/error-boundaries.html
 
-📜 Learn more about query config:
+📜 Learn more about query config: <<<<<<< HEAD
 https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#reactqueryconfigprovider
+======= https://react-query.tanstack.com/docs/api#reactqueryconfigprovider
+
+> > > > > > > upstream/exercises/06-cache-management
 
 ```javascript
 const queryConfig = {
@@ -328,8 +336,13 @@ component.
 📜 You'll want to use `react-query`'s `queryCache.prefetchQuery` and
 `queryCache.removeQueries` functions:
 
+<<<<<<< HEAD
+
 - https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#querycacheremovequeries
-- https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#querycacheprefetchquery
+- # https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#querycacheprefetchquery
+- https://react-query.tanstack.com/docs/api#querycacheremovequeries
+- https://react-query.tanstack.com/docs/api#querycacheprefetchquery
+  > > > > > > > upstream/exercises/06-cache-management
 
 **Files:**
 
@@ -377,10 +390,17 @@ book is: `['book', {bookId}]`.
 
 📜 Here are some docs you might find helpful:
 
+<<<<<<< HEAD
+
 - `queryCache.setQueryData`:
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#querycachesetquerydata
 - `config.onSuccess`:
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#usequery
+  =======
+- `queryCache.setQueryData`:
+  https://react-query.tanstack.com/docs/api#querycachesetquerydata
+- `config.onSuccess`: https://react-query.tanstack.com/docs/api#usequery
+  > > > > > > > upstream/exercises/06-cache-management
 
 **Files:**
 
@@ -412,21 +432,31 @@ the notes textarea shows up instantly.
 📜 To make the proper changes to the list item mutations, you'll need to know
 about the following things:
 
-- `onMutate`, `onError` and `onSettled`:
+- `onMutate`, `onError` and `onSettled`: <<<<<<< HEAD
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#usemutation
-  (use `onMutate` to make your optimistic update, use `onError` to restore the
-  original value, and use `onSettled` to trigger a refetch of all the
-  `list-items` to be sure you have the very latest data). NOTE: What you return
-  from `onMutate` will be the third argument received by `onError`.
-- `queryCache.invalidateQueries`:
+  ======= https://react-query.tanstack.com/docs/api#usemutation
+  > > > > > > > upstream/exercises/06-cache-management (use `onMutate` to make
+  > > > > > > > your optimistic update, use `onError` to restore the original
+  > > > > > > > value, and use `onSettled` to trigger a refetch of all the
+  > > > > > > > `list-items` to be sure you have the very latest data). NOTE:
+  > > > > > > > What you return from `onMutate` will be the third argument
+  > > > > > > > received by `onError`.
+- `queryCache.invalidateQueries`: <<<<<<< HEAD
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#querycacheinvalidatequeries
 - `queryCache.getQueryData`:
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#querycachegetquerydata
   (to get the data you'll restore in the event of an error)
 - `queryCache.setQueryData`:
   https://github.com/tannerlinsley/react-query/blob/5de7214fa242931abc52890112ee12e3e7ff36e7/README.md#querycachesetquerydata
-  (to set it to the optimistic version of the data and to restore the original
-  data if there's an error)
+  ======= https://react-query.tanstack.com/docs/api#querycacheinvalidatequeries
+- `queryCache.getQueryData`:
+  https://react-query.tanstack.com/docs/api#querycachegetquerydata (to get the
+  data you'll restore in the event of an error)
+- `queryCache.setQueryData`:
+  https://react-query.tanstack.com/docs/api#querycachesetquerydata
+  > > > > > > > upstream/exercises/06-cache-management (to set it to the
+  > > > > > > > optimistic version of the data and to restore the original data
+  > > > > > > > if there's an error)
 
 This one is definitely a challenge. It'll take you more than a few minutes to
 figure it out. I suggest you take your time and try and work it out though.
