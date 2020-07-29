@@ -4,6 +4,18 @@
 source material for
 [Build a React App](https://kentcdodds.com/workshops/build-react-apps-1)!
 
+<div align="center">
+  <h2><a href="https://epicreact.dev">EpicReact.Dev</a></h2>
+  <a href="https://epicreact.dev">
+    <img
+      alt="Learn React from Start to Finish"
+      src="https://kentcdodds.com/images/epicreact-promo/er-1.gif"
+    />
+  </a>
+</div>
+
+<hr />
+
 [![Travis Build Status][build-badge]][build]
 [![AppVeyor Build Status][win-build-badge]][win-build]
 [![GPL-3.0 License][license-badge]][license]
@@ -346,23 +358,18 @@ Thanks goes to these wonderful people
     <td align="center"><a href="https://github.com/awareness481"><img src="https://avatars3.githubusercontent.com/u/12380586?v=4" width="100px;" alt=""/><br /><sub><b>Jesse Jafa</b></sub></a><br /><a href="#ideas-awareness481" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/hd4ng"><img src="https://avatars1.githubusercontent.com/u/29898753?v=4" width="100px;" alt=""/><br /><sub><b>Huy Dang</b></sub></a><br /><a href="https://github.com/kentcdodds/bookshelf/issues?q=author%3Ahd4ng" title="Bug reports">🐛</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://gabrielabud.com"><img src="https://avatars3.githubusercontent.com/u/7684770?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Abud</b></sub></a><br /><a href="https://github.com/kentcdodds/bookshelf/commits?author=Buuntu" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
 [all-contributors](https://github.com/kentcdodds/all-contributors)
 specification. Contributions of any kind welcome!
-
-## License
-
-This material is available for private, non-commercial use under the
-[GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html). If you
-would like to use this material to conduct your own workshop, please contact me
-at me@kentcdodds.com
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
@@ -372,7 +379,7 @@ at me@kentcdodds.com
 [build-badge]: https://img.shields.io/travis/kentcdodds/bookshelf.svg?style=flat-square&logo=travis
 [build]: https://travis-ci.org/kentcdodds/bookshelf
 [license-badge]: https://img.shields.io/badge/license-GPL%203.0%20License-blue.svg?style=flat-square
-[license]: https://github.com/kentcdodds/bookshelf/blob/master/README.md#license
+[license]: https://github.com/kentcdodds/react-fundamentals/blob/master/LICENSE
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
